@@ -1,0 +1,43 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /Asm03
+
+api:
+  prefix: api/v1
+
+
+spring:
+      application:
+                 name: Asm03
+      security:
+            user:
+                name: son
+                password: 123
+      datasource:
+        url: jdbc:mysql://localhost:3306/prj321x_asm03_database
+        username: sonbtfx20515
+        password: sonbtfx20515
+      jpa:
+        show-sql: true
+        hibernate:
+          naming:
+            physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+          ddl-auto: none
+      mail:
+        host: smtp.gmail.com
+        port: 587
+        username: sonbtFX20515@funix.edu.vn
+        password: 36xnfcXnBQsx
+        properties:
+          mail:
+            smtp:
+              auth: true
+              starttls:
+                enable: true
+
+jwt:
+  expiration: 604800000
+  secretKey: TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI=
+
